@@ -3,24 +3,29 @@
   margin: 0;
 }
 
+h3,
+span {
+  width: fit-content;
+}
+
 body {
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; 
-  background-color: #E3E0DA;
+  flex-direction: column;
+  background-color: #e3e0da;
 }
 
-/* Title styling*/ 
+/* Title styling*/
 
 #title {
-  font-family:Lucida;
+  font-family: Lucida;
   font-weight: bolder;
   color: black;
-  text-align: center; 
-  margin-bottom: 20px; 
+  text-align: center;
+  margin-bottom: 20px;
   animation: zoomup 2s ease;
   animation-delay: calc(200ms * var(--i));
 }
@@ -31,7 +36,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
   cursor: pointer;
 }
 
@@ -39,7 +44,7 @@ body {
   width: 200px;
   height: 400px;
   border: 3px black solid;
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 #card-one {
@@ -63,7 +68,7 @@ body {
 
 #card-two {
   background-color: #160201;
-  color: #E3E0DA;
+  color: #e3e0da;
   font-family: sans-serif;
   display: none;
   padding: 10px;
@@ -71,7 +76,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   animation: animatetop 0.3s ease;
   height: 386px;
-  width: 620px;
+  width: 500px;
   position: absolute;
   top: 0.5em;
   bottom: 0.5em;
@@ -82,26 +87,26 @@ body {
 /* Skills, hobby's and contact info styling*/
 
 .hobbies-title {
-  font-family:Lucida;
+  font-family: Lucida;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
 .hobbies-info {
   display: flex;
-  justify-content: flex-start; 
-  flex-wrap: wrap; 
-  gap: 3em; 
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 3em;
   font-size: small;
 }
 
 .hobbies-item {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
+  flex-direction: column;
+  align-items: center;
 }
 
-#skills-title{
+#skills-title {
   font-family: Lucida;
   font-weight: bolder;
   margin-top: 1em;
@@ -109,27 +114,27 @@ body {
 
 .skills-list {
   display: flex;
-  flex-wrap: wrap; 
-  list-style-type: none; 
+  flex-wrap: wrap;
+  list-style-type: none;
   margin-top: 1em;
 }
 
 .skills-list li {
   flex: 1 1 50%;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   padding: 5px;
   font-size: small;
 }
 
-#icons-hobby{
+#icons-hobby {
   margin-bottom: 0.5em;
 }
 
-#contact-title{
-  font-family:Lucida Sans;
+#contact-title {
+  font-family: Lucida Sans;
   margin-top: 3em;
-  margin-bottom: 1em; 
-  }
+  margin-bottom: 1em;
+}
 
 .contact-info {
   display: flex;
@@ -142,11 +147,10 @@ body {
 .contact-item {
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
 }
 
 /* Animation for title and card */
-
 
 @keyframes zoomup {
   0%,
@@ -171,5 +175,5 @@ body {
 }
 
 .expanded {
-  transform: translateX(-120px); 
+  transform: translateX(-120px);
 }
